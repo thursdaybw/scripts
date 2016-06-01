@@ -1,0 +1,4 @@
+#!/bin/bash
+DUMP_DB_PATH=$1
+DUMP_UNCOM_SIZE=`gzip -l ${DUMP_DB_PATH} |tail -n 1|cut -c 30-40`
+zcat ${DUMP_DB_PATH} | pv -pe -s ${DUMP_UNCOM_SIZE}
