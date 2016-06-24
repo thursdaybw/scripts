@@ -1,3 +1,8 @@
+# Add this to ~/.bashrc
+#if [ -f "/home/bevan/scripts/augment_path.sh" ] ; then
+#  source /home/bevan/scripts/augment_path.sh
+#fi
+
 LAST_WD=`pwd`
 RAW_PATH="$PATH"
 
